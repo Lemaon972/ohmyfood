@@ -1,0 +1,21 @@
+{
+    "version": 3,
+    "mappings": "AKAA,AAAA,CAAC;AACD,CAAC,AAAA,OAAO;AACR,CAAC,AAAA,QAAQ,CAAC;EACN,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,OAAO;CACtB;;AAED,AAAA,IAAI,CAAC;EAED,SAAS,EAAE,KAAK;CACnB;;AAED,AAAA,IAAI,CAAC;EACD,UAAU,EAAE,UAAU;EACtB,UAAU,EJZN,KAAK;CIaZ;;AChBD,AAAA,IAAI,CAAC;EACD,WAAW,EAAE,oBAAoB;EACjC,KAAK,ELFQ,OAAO;EKGpB,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,GAAG;EAChB,WAAW,EAAE,GAAG;CACnB;;AAED,AAAA,EAAE,CAAC;EACC,WAAW,EAAE,oBAAoB;EACjC,WAAW,EAAE,GAAG;EAChB,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,MAAM;CACrB;;AAED,AAAA,QAAQ,CAAC;EACL,WAAW,EAAE,oBAAoB;EACjC,WAAW,EAAE,GAAG;EAChB,SAAS,EAAE,IAAI;CAClB;;AAED,AAAA,MAAM,CAAC;EACH,WAAW,EAAE,oBAAoB;EACjC,WAAW,EAAE,GAAG;EAChB,UAAU,EAAE,MAAM;EAClB,SAAS,EAAE,OAAO;CACrB",
+    "sources": [
+        "Main.scss",
+        "utils/_variables.scss",
+        "utils/_functions.scss",
+        "utils/_mixins.scss",
+        "utils/_extensions.scss",
+        "base/_base.scss",
+        "base/_typography.scss",
+        "components/_buttons.scss",
+        "layout/_header.scss",
+        "layout/_nav.scss",
+        "layout/_container.scss",
+        "layout/_form.scss",
+        "pages/_index.scss"
+    ],
+    "names": [],
+    "file": "Main.css"
+}
