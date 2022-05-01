@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Site internet pour Oh my food",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lemaon972/ohmyfood.git"
+  },
+  "author": "Philippe J",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lemaon972/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/Lemaon972/ohmyfood#readme"
+}
