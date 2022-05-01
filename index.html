@@ -5,21 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,900i" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/Sass/Main.css">
     <title>Oh my food</title>
 </head>
 <body>
     <header class="header">
-        <div class="logo">
-            <img src="Public/img/logo/ohmyfood.png" alt="logo-ohmyfood">
-            <form class="geolocalisation" action="action_page.php">
+        <div class="header__logo">
+            <img src="Public/img/logo/ohmyfood.png" alt="logo-ohmyfood"></div>
+            <form class="header__form" action="action_page.php">
                 <i class="fa fa-map-marker"></i>
                 <input type="text" placeholder="Paris, Belleville" name="search">
               </form>
               <h1 class="Titre-principale">Réservez le menu qui vous convient</h1>
               <h2 class="Sous-titre">Découvrez des restaurants d'exception séléctionnés par nos soins.</h2>
-        </div>
-        	<button id="Button-primary" class="btn-primary">Exolorer nos restaurants</button>
+        
+        	<button id="Button-primary" class="btn-primary">Explorer nos restaurants</button>
     </header>
     <nav class="filtre">
         <h2>Fonctionnement</h2>
@@ -27,21 +27,20 @@
         <button id="Button-composez" class="btn-fonctionnement">Composez votre menu</button>
         <button id="Button-degustez" class="btn-fonctionnement">Dégustez au restaurant</button>
     </nav>
-<main>
-<h2 class="Titre-restaurant">Restaurants</h2>
-<article class="vignette-restaurant">
-    <div class="image-restaurant">
+<main class="container">
+<h2 class="container__heading">Restaurants</h2>
+<section class="vignette" onclick="">
+    <div class="vignette__image">
         <img src="Public/img/restaurants/la-palette-du-gout.jpg" alt="presentation-plat-la-palette-du-gout">
-    <div class="nouveau">Nouveau</div>
+    <div class="vignette__bandeau">Nouveau</div>
     </div>
-    <div class="info-restaurant">
-        <div class="label">
-            <h3 class="nom-restaurant">La palette du goût</h3>
-            <p class="adresse-restaurant">Ménilmontant</p>
+    <div class="vignette__info">
+            <h3 class="vignette__heading">La palette du goût</h3>
+            <p class="vignette__byline">Ménilmontant</p>
         </div>
         <i class="fa fa-solid fa fa-heart"></i>
     </div>
-</article>
+</section>
 <article class="vignette-restaurant">
     <div class="image-restaurant">
         <img src="Public/img/restaurants/la-note-enchantee.jpg" alt="presentation-plat-la-note-enchantee">
@@ -58,10 +57,10 @@
 </main> 
 <footer class="footer">
     <img src="Public/img/logo/ohmyfood@2x.svg" alt="logo-ohmyfood">
-    <a class="footer"><i class="fa fa-cutlery"></i>Proposer un restaurant</a>
-    <a class="footer"><i class="fa fa-handshake-angle"></i>Devenir partenaire</a>
-    <a class="footer">Mentions légales</a>
-    <a class="footer">Contact</a>
+    <a class="footer-link"><i class="fa fa-cutlery"></i>Proposer un restaurant</a>
+    <a class="footer-link"><i class="fa fa-handshake-angle"></i>Devenir partenaire</a>
+    <a class="footer-link">Mentions légales</a>
+    <a class="footer-link">Contact</a>
 
 </footer>
 

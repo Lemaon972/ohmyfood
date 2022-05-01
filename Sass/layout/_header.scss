@@ -1,0 +1,18 @@
+.header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: $white;   
+    &__logo {
+        width: 90%;
+        @include center;
+        margin-top: 20px;
+        @include heading-shadow;
+    }
+    &__form {
+        width: 90%;
+        @include center;
+        margin-top: 20px;
+    }
+    }
