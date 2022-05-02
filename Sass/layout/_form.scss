@@ -1,0 +1,11 @@
+input{
+    border: none;
+    height: 30px;
+    background-color: $grey;
+    text-align: center;
+    font-size: 1.8rem;
+    color: black;
+}
+::placeholder{
+    color: black;
+}

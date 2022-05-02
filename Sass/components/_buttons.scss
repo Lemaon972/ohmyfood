@@ -1,0 +1,10 @@
+button{
+    width: 90%;
+    height: 70px;
+    border-radius:15px;
+    margin-top: 20px;
+    @include shadow;
+    border: none;
+
+    
+}
