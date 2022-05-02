@@ -1,18 +1,23 @@
 .header {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
     width: 100%;
     background-color: $white;   
+    text-align: center;
+    box-shadow: 0px 2px 10px 1px grey; 
+    padding: $layout-padding;
+    position:relative;
+    z-index:1;
+    
+    
     &__logo {
-        width: 90%;
-        @include center;
-        margin-top: 20px;
-        @include heading-shadow;
+        width: 60%;  
     }
-    &__form {
-        width: 90%;
-        @include center;
-        margin-top: 20px;
+    &__retour{
+        position: absolute;
+        top:20px;
+        left:20px;
+       } 
     }
-    }
+

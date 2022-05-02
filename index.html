@@ -3,60 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,900" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/Sass/Main.css">
     <title>Oh my food</title>
 </head>
 <body>
     <header class="header">
-        <div class="header__logo">
-            <img src="Public/img/logo/ohmyfood.png" alt="logo-ohmyfood"></div>
-            <form class="header__form" action="action_page.php">
+        
+            <img class="header__logo" src="Public/img/logo/ohmyfood.png" alt="logo-ohmyfood">
+        
+    </header>
+    <nav class="nav">
+            <form class="nav__form" action="action_page.php">
                 <i class="fa fa-map-marker"></i>
                 <input type="text" placeholder="Paris, Belleville" name="search">
-              </form>
-              <h1 class="Titre-principale">Réservez le menu qui vous convient</h1>
-              <h2 class="Sous-titre">Découvrez des restaurants d'exception séléctionnés par nos soins.</h2>
-        
-        	<button id="Button-primary" class="btn-primary">Explorer nos restaurants</button>
-    </header>
-    <nav class="filtre">
-        <h2>Fonctionnement</h2>
-        <button id="Button-choisissez" class="btn-fonctionnement">Choisissez un restaurant</button>
-        <button id="Button-composez" class="btn-fonctionnement">Composez votre menu</button>
-        <button id="Button-degustez" class="btn-fonctionnement">Dégustez au restaurant</button>
+            </form>
+            <div class="nav__concept">
+                <h1 class="nav__heading">Réservez le menu qui vous convient</h1>
+                <h2 class="nav__byline">Découvrez des restaurants d'exception, séléctionnés par nos soins.</h2>
+                
+        	    <button id="Button-primary" class="btn-primary">Explorer nos restaurants</button>
+            </div>
+
+    <div class="nav__filtre">
+        <h2 class="filtres">Fonctionnement</h2>
+        <button id="Button-choisissez" class="btn-fonctionnement"><i class="fa fa-mobile"></i> un restaurant</button>
+        <button id="Button-composez" class="btn-fonctionnement"><i class="fa fa-list-ul"></i>Composez votre menu</button>
+        <button id="Button-degustez" class="btn-fonctionnement"><i class="fa fa-store"></i>Dégustez au restaurant</button>
+    </div>
     </nav>
 <main class="container">
 <h2 class="container__heading">Restaurants</h2>
-<section class="vignette" onclick="">
+<div class="container__list">
+    <section class="vignette">
+        <div class="vignette__image">
+            <img src="Public/img/restaurants/la-palette-du-gout.jpg" alt="presentation-plat-la-note-enchantee">
+        <div class="vignette__bandeau">Nouveau</div>
+        </div>
+        <div class="vignette__info">
+            <div class="vignette__heading-resto">
+                <h3 class="vignette__heading">La palette du goût</h3>
+                <p class="vignette__byline">Ménilmontant</p>
+            </div>
+            <div class="vignette__icon">
+                <i class="fa fa-heart"></i>
+            </div>
+        </div>
+    </section>
+<section class="vignette">
     <div class="vignette__image">
-        <img src="Public/img/restaurants/la-palette-du-gout.jpg" alt="presentation-plat-la-palette-du-gout">
+        <img src="Public/img/restaurants/la-note-enchantee.jpg" alt="presentation-plat-la-note-enchantee">
     <div class="vignette__bandeau">Nouveau</div>
     </div>
     <div class="vignette__info">
-            <h3 class="vignette__heading">La palette du goût</h3>
-            <p class="vignette__byline">Ménilmontant</p>
+        <div class="vignette__heading-resto">
+            <h3 class="vignette__heading">La note enchantée</h3>
+            <p class="vignette__byline">Charonne</p>
         </div>
-        <i class="fa fa-solid fa fa-heart"></i>
+        <div class="vignette__icon">
+            <i class="fa fa-heart"></i>
+        </div>
     </div>
 </section>
-<article class="vignette-restaurant">
-    <div class="image-restaurant">
-        <img src="Public/img/restaurants/la-note-enchantee.jpg" alt="presentation-plat-la-note-enchantee">
-    <div class="nouveau">Nouveau</div>
-    </div>
-    <div class="info-restaurant">
-        <div class="label">
-            <h3 class="nom-restaurant">La note enchantée</h3>
-            <p class="adresse-restaurant">Charonne</p>
-        </div>
-        <i class="fa fa-solid fa fa-heart"></i>
-    </div>
-</article>
+</div>
 </main> 
 <footer class="footer">
+    <div class="footer__logo">
     <img src="Public/img/logo/ohmyfood@2x.svg" alt="logo-ohmyfood">
+</div>
     <a class="footer-link"><i class="fa fa-cutlery"></i>Proposer un restaurant</a>
     <a class="footer-link"><i class="fa fa-handshake-angle"></i>Devenir partenaire</a>
     <a class="footer-link">Mentions légales</a>
