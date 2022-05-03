@@ -8,6 +8,7 @@
    margin-left: auto;
    margin-right: auto;
     &__image {
+        position: relative;
         margin: 0px;
         height: 180px;
         @include img-ratio;
@@ -38,17 +39,18 @@
         padding-right: 20px;
     }
     &__bandeau {
-        float: right;
-        margin-right: 15px;
-        margin-top: -15px;
+        position: absolute;
+        top: 15px;
+        left: 225px;
+        margin-right: 35px;
+        margin-top: 15px;
         background-color: $colour-tertiary;
         font-size: 1.66rem;
         width: 30%;
         text-align: center;
         border-radius: 5px;
-        @include shadow;
         padding: 5px;
-       
     }
+   
   
 }

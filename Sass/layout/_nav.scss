@@ -23,15 +23,33 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        padding-bottom: 20px;
+        align-items: center;
+        padding-bottom: 50px;
         
     }
     &__filtres {
+        padding-right: 190px;
         font-size: 28px;
         font-weight: 600;
         
+        
     }
     
-   
+    &__numero{
+        position:absolute;
+        left:10px;
+        background-color: $colour-primary ;
+        color: $white;
+        font-size: 14px;
+        border-radius: 50%;
+        padding: 2px 5px;
+    }
+    
+i{
+    position: absolute;
+    color: $darkgrey;
+    font-size: 25px;
+    left: 50px;
+}
     
 }

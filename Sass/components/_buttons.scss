@@ -5,6 +5,30 @@ button{
     margin-top: 20px;
     @include shadow;
     border: none;
-
+    cursor:pointer;
+    transition: background-color 350ms;
+    }
+.primary{
+    width: 60%;
+    height: 50px;
+    font-size: 17px;
+    color: $white;
+    border-radius: 50px;
+    background: linear-gradient($colour-secondary, $colour-primary);
+    
+    &:hover{
+       box-shadow: 2px 2px 2px $darkgrey;
+       
+       
+   }
+}
+.btn-fonctionnement{
+    width: 90%;
+    font-size: 18px;
+    &:hover{
+        box-shadow: 2px 2px 5px $darkgrey;
+        background-color: $colour-primary;
+        background-color: lighten($colour-primary, $amount: 30);
+    }
     
 }
