@@ -60,7 +60,7 @@ button {
 button {
   width: 90%;
   height: 70px;
-  border-radius: 15px;
+  border-radius: 20px;
   margin-top: 20px;
   -webkit-box-shadow: 0px 1px 4px 2px #d6d6d6;
           box-shadow: 0px 1px 4px 2px #d6d6d6;
@@ -86,7 +86,7 @@ button {
 }
 
 .btn-fonctionnement {
-  width: 90%;
+  width: 85%;
   font-size: 18px;
 }
 
@@ -181,26 +181,26 @@ button {
 }
 
 .nav__filtres {
-  padding-right: 190px;
+  padding-right: 160px;
   font-size: 28px;
   font-weight: 600;
 }
 
 .nav__numero {
   position: absolute;
-  left: 10px;
+  left: 20px;
   background-color: #9356DC;
   color: white;
   font-size: 14px;
   border-radius: 50%;
-  padding: 2px 5px;
+  padding: 3px 7px;
 }
 
 .nav i {
   position: absolute;
   color: #353535;
   font-size: 25px;
-  left: 50px;
+  left: 65px;
 }
 
 .container {
@@ -213,11 +213,13 @@ button {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #f7f7f7;
-  padding-bottom: 20px;
+  padding: 50px 0;
 }
 
 .container__titre {
-  font-size: 40px;
+  font-size: 28px;
+  font-weight: 700;
+  padding-right: 200px;
 }
 
 input {
@@ -262,16 +264,27 @@ input {
   padding: 20px 20px;
 }
 
-.footer__image {
+.footer__logo {
   width: 100%;
   display: block;
   overflow: hidden;
   border-radius: 20px 20px 0 0;
-  height: 30px;
+  width: 130px;
 }
 
-.footer__image img {
+.footer__logo img {
   width: 100%;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.footer i {
+  font-size: 18px;
+  margin-right: 10px;
 }
 
 .index {
@@ -295,6 +308,7 @@ input {
           box-shadow: 0px 1px 4px 2px #d6d6d6;
   margin-left: auto;
   margin-right: auto;
+  cursor: pointer;
 }
 
 .vignette__image {
@@ -349,9 +363,9 @@ input {
 
 .vignette__bandeau {
   position: absolute;
-  top: 15px;
-  left: 225px;
-  margin-right: 35px;
+  top: 5px;
+  left: 245px;
+  margin-right: 25px;
   margin-top: 15px;
   background-color: #D6FFF5;
   font-size: 1.66rem;
@@ -359,5 +373,33 @@ input {
   text-align: center;
   border-radius: 5px;
   padding: 5px;
+  color: #00a37b;
+  font-weight: 700;
+}
+
+.fa-regular {
+  position: relative;
+  right: -30px;
+  opacity: 1;
+  font-size: 30px;
+  -webkit-transition: opacity 350ms;
+  transition: opacity 350ms;
+}
+
+.fa-regular:hover {
+  opacity: 0;
+  color: white;
+}
+
+.fa-solid {
+  opacity: 0;
+  font-size: 30px;
+  -webkit-transition: opacity 350ms;
+  transition: opacity 350ms;
+  color: #9356DC;
+}
+
+.fa-solid:hover {
+  opacity: 1;
 }
 /*# sourceMappingURL=Main.css.map */

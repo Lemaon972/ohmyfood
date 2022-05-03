@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/dd915a6b63.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/Sass/Main.css">
     <title>Oh my food</title>
 </head>
@@ -30,15 +30,15 @@
         <h2 class="nav__filtres">Fonctionnement</h2>
         <button id="Button-choisissez" class="btn-fonctionnement"><div class="nav__numero">1</div><i class="fa fa-mobile"></i> Choisissez un restaurant</button>
         <button id="Button-composez" class="btn-fonctionnement"><div class="nav__numero">2</div><i class="fa fa-list-ul"></i>Composez votre menu</button>
-        <button id="Button-degustez" class="btn-fonctionnement"><div class="nav__numero">3</div><i class="fa fa-list-ul"></i>Dégustez au restaurant</button>
+        <button id="Button-degustez" class="btn-fonctionnement"><div class="nav__numero">3</div><i class="fa fa-store"></i>Dégustez au restaurant</button>
     </div>
     </nav>
 <main class="container">
 <h2 class="container__titre">Restaurants</h2>
-<div class="container__list">
-    <section class="vignette">
+<section class="container__list">
+    <article class="vignette" onclick="document.location='la-palette-du-gout.html'">
         <div class="vignette__image">
-            <img src="Public/img/restaurants/la-palette-du-gout.jpg" alt="presentation-plat-la-note-enchantee">
+            <img src="Public/img/restaurants/la-palette-du-gout.jpg" alt="la-palette-du-gout">
         <div class="vignette__bandeau">Nouveau</div>
         </div>
         <div class="vignette__info">
@@ -47,11 +47,11 @@
                 <p class="vignette__byline">Ménilmontant</p>
             </div>
             <div class="vignette__icon">
-                <i class="fa fa-heart"></i>
+                <i class="fa-regular fa-heart"></i><i class="fa-solid fa-heart"></i>
             </div>
         </div>
-    </section>
-<section class="vignette">
+    </article>
+    <article class="vignette" onclick="document.location='la-note-enchantee.html'">
     <div class="vignette__image">
         <img src="Public/img/restaurants/la-note-enchantee.jpg" alt="presentation-plat-la-note-enchantee">
     <div class="vignette__bandeau">Nouveau</div>
@@ -62,11 +62,11 @@
             <p class="vignette__byline">Charonne</p>
         </div>
         <div class="vignette__icon">
-            <i class="fa fa-heart"></i>
+            <i class="fa-regular fa-heart"></i><i class="fa-solid fa-heart"></i>
         </div>
     </div>
-</section>
-<section class="vignette">
+</article>
+<article class="vignette" onclick="document.location='a-la-francaise.html'">
     <div class="vignette__image">
         <img src="Public/img/restaurants/A la francaise.jpg" alt="presentation-a-la-francaise">
     
@@ -77,11 +77,11 @@
             <p class="vignette__byline">Cité Rouge</p>
         </div>
         <div class="vignette__icon">
-            <i class="fa fa-heart"></i>
+            <i class="fa-regular fa-heart"></i><i class="fa-solid fa-heart"></i>
         </div>
     </div>
-</section>
-<section class="vignette">
+</article>
+<article class="vignette" onclick="document.location='le-delice-des-sens.html'">
     <div class="vignette__image">
         <img src="Public/img/restaurants/le-delice-des-sens.jpg" alt="presentation-le-delice-des-sens">
     
@@ -92,20 +92,20 @@
             <p class="vignette__byline">Folie-Méricourt</p>
         </div>
         <div class="vignette__icon">
-            <i class="fa fa-heart"></i>
+            <i class="fa-regular fa-heart"></i><i class="fa-solid fa-heart"></i>
         </div>
     </div>
+</article>
 </section>
-</div>
 </main> 
 <footer class="footer">
     <div class="footer__logo">
     <img src="Public/img/logo/ohmyfood@2x.svg" alt="logo-ohmyfood">
 </div>
-    <a class="footer-link"><i class="fa fa-cutlery"></i>Proposer un restaurant</a>
-    <a class="footer-link"><i class="fa fa-handshake-angle"></i>Devenir partenaire</a>
-    <a class="footer-link">Mentions légales</a>
-    <a class="footer-link">Contact</a>
+    <a class="footer__link"><i class="fas fa-utensils"></i>Proposer un restaurant</a>
+    <a class="footer__link"><i class="fa fa-handshake-angle"></i>Devenir partenaire</a>
+    <a class="footer__link">Mentions légales</a>
+    <a href="mailto:contact@ohmyfood.fr" class="footer__link">Contact</a>
 
 </footer>
 

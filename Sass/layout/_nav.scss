@@ -28,7 +28,7 @@
         
     }
     &__filtres {
-        padding-right: 190px;
+        padding-right: 160px;
         font-size: 28px;
         font-weight: 600;
         
@@ -37,19 +37,19 @@
     
     &__numero{
         position:absolute;
-        left:10px;
+        left:20px;
         background-color: $colour-primary ;
         color: $white;
         font-size: 14px;
         border-radius: 50%;
-        padding: 2px 5px;
+        padding: 3px 7px;
     }
     
 i{
     position: absolute;
     color: $darkgrey;
     font-size: 25px;
-    left: 50px;
+    left: 65px;
 }
     
 }

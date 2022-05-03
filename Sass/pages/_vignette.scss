@@ -7,6 +7,7 @@
    @include shadow;
    margin-left: auto;
    margin-right: auto;
+   cursor: pointer;
     &__image {
         position: relative;
         margin: 0px;
@@ -40,9 +41,9 @@
     }
     &__bandeau {
         position: absolute;
-        top: 15px;
-        left: 225px;
-        margin-right: 35px;
+        top: 5px;
+        left: 245px;
+        margin-right: 25px;
         margin-top: 15px;
         background-color: $colour-tertiary;
         font-size: 1.66rem;
@@ -50,7 +51,34 @@
         text-align: center;
         border-radius: 5px;
         padding: 5px;
+        color: darken($colour-tertiary, $amount: 60);
+        font-weight: 700;
     }
    
   
+}
+.fa-regular {
+    position:relative;
+    right: -30px;
+    opacity:1;
+    font-size: 30px;
+    transition: opacity 350ms;
+
+    &:hover{
+        opacity: 0;
+        color: $white;
+    }
+}
+.fa-solid {
+    
+    opacity: 0;
+    font-size: 30px;
+    transition: opacity 350ms;
+    color: $colour-primary;
+
+    &:hover{
+       opacity: 1;
+       
+        
+    }
 }

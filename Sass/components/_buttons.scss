@@ -1,7 +1,7 @@
 button{
     width: 90%;
     height: 70px;
-    border-radius:15px;
+    border-radius:20px;
     margin-top: 20px;
     @include shadow;
     border: none;
@@ -23,7 +23,7 @@ button{
    }
 }
 .btn-fonctionnement{
-    width: 90%;
+    width: 85%;
     font-size: 18px;
     &:hover{
         box-shadow: 2px 2px 5px $darkgrey;

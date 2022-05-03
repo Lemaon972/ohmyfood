@@ -6,9 +6,17 @@
     background-color: $darkgrey;   
     color: $white;
     padding: 20px 20px;
-    &__image {
+    &__logo {
         @include img-ratio;
-        height: 30px;
+        width: 130px;   
     }
-    
+    &__link{
+        text-decoration: none;
+        color: $white;
+        font-weight: 500;
+    }
+   i{
+       font-size: 18px;
+        margin-right: 10px;
+    }
 }
