@@ -203,6 +203,35 @@ button {
   left: 65px;
 }
 
+.primary {
+  width: 60%;
+  height: 50px;
+  font-size: 17px;
+  color: white;
+  border-radius: 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+}
+
+.primary:hover {
+  -webkit-box-shadow: 2px 2px 2px #353535;
+          box-shadow: 2px 2px 2px #353535;
+}
+
+.btn-fonctionnement {
+  width: 85%;
+  font-size: 18px;
+  -webkit-transition: background-color 250ms;
+  transition: background-color 250ms;
+}
+
+.btn-fonctionnement:hover + i {
+  -webkit-box-shadow: 2px 2px 5px #353535;
+          box-shadow: 2px 2px 5px #353535;
+  background-color: #9356DC;
+  background-color: #e4d5f6;
+}
+
 .container {
   width: 100%;
   display: -webkit-box;
@@ -379,27 +408,30 @@ input {
 
 .fa-regular {
   position: relative;
-  right: -30px;
+  z-index: 1;
   opacity: 1;
   font-size: 30px;
   -webkit-transition: opacity 350ms;
   transition: opacity 350ms;
 }
 
-.fa-regular:hover {
-  opacity: 0;
-  color: white;
+.fa-regular:hover .fa-solid {
+  opacity: 1;
 }
 
 .fa-solid {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
   opacity: 0;
   font-size: 30px;
   -webkit-transition: opacity 350ms;
   transition: opacity 350ms;
-  color: #9356DC;
-}
-
-.fa-solid:hover {
-  opacity: 1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 /*# sourceMappingURL=Main.css.map */

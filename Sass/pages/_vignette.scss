@@ -58,27 +58,30 @@
   
 }
 .fa-regular {
-    position:relative;
-    right: -30px;
+    position: relative;
+    z-index: 1;
     opacity:1;
     font-size: 30px;
     transition: opacity 350ms;
 
     &:hover{
-        opacity: 0;
-        color: $white;
+        & .fa-solid{
+            opacity: 1;
+        }
+       
     }
 }
 .fa-solid {
-    
+    position:absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
     opacity: 0;
     font-size: 30px;
     transition: opacity 350ms;
-    color: $colour-primary;
+    background: linear-gradient($colour-secondary, $colour-primary);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 
-    &:hover{
-       opacity: 1;
-       
-        
-    }
 }
