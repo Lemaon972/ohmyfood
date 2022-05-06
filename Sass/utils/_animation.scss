@@ -1,0 +1,65 @@
+@keyframes fadein {
+    0% {
+        opacity: 0;
+
+    }
+
+    50% {
+        opacity: 0;
+
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes loader {
+    0% {
+    opacity: 1;
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    50% {
+    opacity: 1;
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+    opacity: 0;
+    transform: rotate(1800deg);
+    }
+    }
+    @keyframes fadeout {
+        0% {
+        opacity: 1;
+        
+        }
+        50% {
+        opacity: 1;
+       
+        }
+        100% {
+        opacity: 0;
+          visibility: hidden;
+        }
+        }
+        @keyframes effet-slide{
+            from{
+                transform: translateY(60px);
+                opacity: 0;
+            }
+            to{
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        @keyframes turn {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+
+

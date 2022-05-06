@@ -16,4 +16,15 @@
             width: 100%;
             
         }
-}
+    }
+@mixin img-header {
+        width: 100%;
+        display: block;
+        overflow: hidden;
+            
+        & img {
+        width: 100%;
+                
+        }
+
+    }

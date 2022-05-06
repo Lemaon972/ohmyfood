@@ -4,7 +4,7 @@
   "description": "Site internet pour Oh my food",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ../Sass/main.scss:../public/css/style.css"
+    "sass": "sass --watch ../Sass/main.scss: ../Public/css/style.css"
   },
   "repository": {
     "type": "git",

@@ -1,46 +1,51 @@
-.vignette{
-   width: 85%;
-   padding: 0px 0 0 0px ;
-   border-radius: 20px;
-   background-color: $white;
-   margin-top: 20px;
-   @include shadow;
-   margin-left: auto;
-   margin-right: auto;
-   cursor: pointer;
-   animation:fadein 2000ms;
-   animation-fill-mode: forwards;
+.vignette {
+    width: 85%;
+    border-radius: 20px;
+    background-color: $white;
+    margin-top: 20px;
+    @include shadow;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    animation: fadein 2000ms;
+    animation-fill-mode: forwards;
+
     &__image {
         position: relative;
         margin: 0px;
         height: 180px;
         @include img-ratio;
-        
     }
+
     &__info {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
         padding: 10px 10px;
-        
+
     }
+
     &__heading {
         font-size: 2rem;
         font-weight: 600;
     }
+
     &__heading-resto {
         float: left;
-        
+
     }
+
     &__byline {
         font-size: 2rem;
     }
+
     &__icon {
         float: right;
         height: 100%;
         padding-right: 20px;
     }
+
     &__bandeau {
         position: absolute;
         top: 5px;
@@ -56,25 +61,27 @@
         color: darken($colour-tertiary, $amount: 60);
         font-weight: 700;
     }
-   
-  
+
+
 }
+
 .fa-regular {
     position: relative;
     z-index: 1;
-    opacity:1;
+    opacity: 1;
     font-size: 30px;
     transition: opacity 350ms;
 
-    &:hover{
-        & .fa-solid{
+    &:hover {
+        & .fa-solid {
             opacity: 1;
         }
-       
+
     }
 }
+
 .fa-solid {
-    position:absolute;
+    position: absolute;
     top: 0;
     right: 0;
     left: 0;
@@ -84,19 +91,68 @@
     transition: opacity 350ms;
     background: linear-gradient($colour-secondary, $colour-primary);
     -webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
 
 }
-@keyframes fadein {
-    0% {
-    opacity: 0;
-    
-    }
-    50% {
-    opacity: 0;
+
+.vignette-menu {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: white;
+    margin-bottom: 25px;
+    border-radius: 20px;
+    @include shadow;
+    cursor: pointer;
    
+
+    
+
+    
+
+    &__heading {
+        padding-top: 5px;
+        padding-left: 10px;
+        margin: 5px 5px;
+        overflow: hidden;
     }
-    100% {
-    opacity: 1;
+
+    &__check {
+        display: flex;
+
     }
+
+    &__prix {
+        display: flex;
+        align-items: flex-end;
+        padding: 10px 10px;
+        
+        
+        }
+
     }
+
+
+    .effet {
+        display: grid;
+        align-items: center;
+        width: 60px;
+        margin-right: -65px;
+        padding: 0 17px;
+        opacity: 1;
+        border-top-right-radius: 17px;
+        border-bottom-right-radius: 17px;
+        background-color: $colour-tertiary;
+        transition-duration: 2000ms;
+        
+       
+
+        i {
+            color: $white;
+            animation: turn;
+        }
+    }
+    .vignette-menu :hover + .effet{
+        margin: 0;
+     }
+    
