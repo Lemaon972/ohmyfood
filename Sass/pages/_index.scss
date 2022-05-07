@@ -1,6 +1,29 @@
-.index {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    
+
+.loader {
+    position:fixed;
+    height: 100vh;
+    inset: 0;
+    z-index: 2;
+    background-color: rgba(65, 64, 64, 0.98);
+    animation:fadeout 1500ms 1500ms;
+    animation-fill-mode: forwards;
+  
+   &:after {
+    content: " ";
+    display: block;
+    top: 200px;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 8px;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    border: 32px solid #fff;
+    border-color: $colour-primary transparent $colour-secondary transparent;
+    animation: loader 2s ease-in-out ;
+    animation-fill-mode: forwards;
+  }
+ 
 }

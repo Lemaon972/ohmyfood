@@ -23,9 +23,9 @@ button{
    }
 }
 .btn-fonctionnement{
-    width: 85%;
+    width: 80%;
     font-size: 18px;
-    &:hover{
+    &:hover {
         box-shadow: 2px 2px 5px $darkgrey;
         background-color: $colour-primary;
         background-color: lighten($colour-primary, $amount: 30);

@@ -1,69 +1,86 @@
-.background-menu{
+.background-menu {
     width: 100%;
     display: flex;
     flex-direction: column;
     background-color: $grey;
 
 }
-    .container-menu {
+
+.container-menu {
+    display: flex;
+    position: relative;
+    align-items: center;
+    top: -70px;
+    z-index: 1;
+    flex-direction: column;
+    border-radius: 50px 50px 0 0;
+    width: 100%;
+    margin-bottom: -70px;
+    padding-bottom: 50px;
+    background-color: $lightgrey;
+
+    &__topheading {
         display: flex;
-        position: relative;
-        top: -70px;
-        z-index: 1;
-        flex-direction: column;
-        border-radius: 50px 50px 0 0;
+        flex-direction: row;
         width: 100%;
-        background-color: $lightgrey;
-            
-            &__topheading {
-                display: flex;
-                flex-direction: row;
-                width: 100%;
-                height: auto;
-                padding: 10px 30px 0px 10px;
-                align-items: center;
-                justify-content: space-between;
-                
-            }
-            h1{
-                font-size: 25px;
-                font-family: 'Shrikhand', cursive;
-                font-weight: 900;
-                
-            }
-            i{
-                font-size: 25px;
-                
-                
-            }
-            h2{
+        padding: 30px 10px 0px 10px;
+        align-items: center;
+        justify-content: space-around;
+
+
+
+        h1 {
+            font-size: 25px;
+            font-family: 'Shrikhand', cursive;
+            font-weight: 900;
+            margin: unset;
+        }
+
+        i {
+            font-size: 25px;
+
+
+        }
+    }
+
+
+
+    .list-menu {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        padding-bottom: 50px;
+        margin: auto;
+
+        &__underline {
+            border-bottom: 3px solid $colour-tertiary;
+            height: 30px;
+            margin-bottom: 20px;
+            width: 43px;
+
+            h2 {
                 font-size: 20px;
                 color: black;
                 font-weight: 300;
                 text-align: left;
                 margin: 40px 0;
 
-            }
-            
-        }
-.list-menu{
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-    margin: auto;
-    
-    h3{
-        font-size: 20px;
-        color: black;
-        font-weight: 600;
-        
-    }
-    p{
-        font-size: 16px;
-        color: black;
-        font-weight: 300;
-    }
 
+            }
+
+            h3 {
+                font-size: 16px;
+                color: black;
+                font-weight: 500;
+
+            }
+
+            p {
+                font-size: 14px;
+                color: black;
+                font-weight: 300;
+            }
+        }
+    }
 
 }
-

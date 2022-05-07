@@ -6,9 +6,10 @@
     background-color: $darkgrey;   
     color: $white;
     padding: 20px 20px;
-    &__logo {
-        @include img-ratio;
-        width: 130px;   
+    &__logo h2 {
+        font-family: 'Shrikhand', cursive;  
+        color: $white;
+        font-size: 30px;
     }
     &__link{
         text-decoration: none;

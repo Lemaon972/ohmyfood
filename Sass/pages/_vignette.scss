@@ -49,7 +49,7 @@
     &__bandeau {
         position: absolute;
         top: 5px;
-        left: 245px;
+        left: 225px;
         margin-right: 25px;
         margin-top: 15px;
         background-color: $colour-tertiary;
@@ -104,7 +104,6 @@
     border-radius: 20px;
     @include shadow;
     cursor: pointer;
-   
 
     
 
@@ -125,7 +124,7 @@
     &__prix {
         display: flex;
         align-items: flex-end;
-        padding: 10px 10px;
+        padding: 10px 20px 10px 0;
         
         
         }
@@ -136,23 +135,28 @@
     .effet {
         display: grid;
         align-items: center;
-        width: 60px;
-        margin-right: -65px;
+        width: 50px;
+        margin-right: -55px;
         padding: 0 17px;
         opacity: 1;
         border-top-right-radius: 17px;
         border-bottom-right-radius: 17px;
         background-color: $colour-tertiary;
-        transition-duration: 2000ms;
+        transition-duration: 1000ms;
         
        
 
         i {
             color: $white;
-            animation: turn;
+            
         }
     }
     .vignette-menu :hover + .effet{
         margin: 0;
+        
+            i{
+                animation: turn 1500ms forwards;
+            }
+        
      }
     
