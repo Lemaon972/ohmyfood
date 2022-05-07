@@ -21,42 +21,6 @@
     opacity: 1;
   }
 }
-@-webkit-keyframes loader {
-  0% {
-    opacity: 1;
-    transform: rotate(0);
-    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-            animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  }
-  50% {
-    opacity: 1;
-    transform: rotate(900deg);
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-  100% {
-    opacity: 0;
-    transform: rotate(1800deg);
-  }
-}
-@keyframes loader {
-  0% {
-    opacity: 1;
-    transform: rotate(0);
-    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-            animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  }
-  50% {
-    opacity: 1;
-    transform: rotate(900deg);
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-  100% {
-    opacity: 0;
-    transform: rotate(1800deg);
-  }
-}
 @-webkit-keyframes fadeout {
   0% {
     opacity: 1;
@@ -123,6 +87,54 @@
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes loader2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes loader2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes loader3 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes loader3 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes loader4 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes loader4 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 *,
@@ -378,33 +390,51 @@ input {
   margin-right: 10px;
 }
 
-.loader {
+.loader2 {
   position: fixed;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   inset: 0;
   z-index: 2;
   background-color: rgba(65, 64, 64, 0.98);
-  -webkit-animation: fadeout 1500ms 1500ms;
-          animation: fadeout 1500ms 1500ms;
+  -webkit-animation: fadeout 2000ms 2000ms;
+          animation: fadeout 2000ms 2000ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
-.loader:after {
-  content: " ";
-  display: block;
-  top: 200px;
-  border-radius: 50%;
-  width: 0;
-  height: 0;
-  margin: 8px;
-  margin-top: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  box-sizing: border-box;
-  border: 32px solid #fff;
-  border-color: #9356DC transparent #FF79DA transparent;
-  -webkit-animation: loader 2s ease-in-out;
-          animation: loader 2s ease-in-out;
+.loader2__oh {
+  opacity: 0;
+  color: #fff;
+  font-size: 40px;
+  font-family: "Shrikhand", cursive;
+  -webkit-animation: loader2 2s ease-in-out;
+          animation: loader2 2s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.loader2__my {
+  opacity: 0;
+  color: #fff;
+  font-size: 40px;
+  font-family: "Shrikhand", cursive;
+  -webkit-animation: loader3 1s ease-in-out;
+          animation: loader3 1s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.loader2__food {
+  opacity: 0;
+  color: #fff;
+  font-size: 40px;
+  font-family: "Shrikhand", cursive;
+  -webkit-animation: loader4 1s ease-in-out;
+          animation: loader4 1s ease-in-out;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -463,13 +493,13 @@ input {
   left: 225px;
   margin-right: 25px;
   margin-top: 15px;
-  background-color: #D6FFF5;
+  background-color: #99E2D0;
   font-size: 1.66rem;
   width: 30%;
   text-align: center;
   border-radius: 5px;
   padding: 5px;
-  color: #00a37b;
+  color: #10392f;
   font-weight: 700;
 }
 
@@ -532,7 +562,7 @@ input {
   opacity: 1;
   border-top-right-radius: 17px;
   border-bottom-right-radius: 17px;
-  background-color: #D6FFF5;
+  background-color: #99E2D0;
   transition-duration: 1000ms;
 }
 .effet i {
@@ -592,25 +622,26 @@ input {
   margin: auto;
 }
 .container-menu .list-menu__underline {
-  border-bottom: 3px solid #D6FFF5;
+  border-bottom: 3px solid #99E2D0;
   height: 30px;
   margin-bottom: 20px;
-  width: 43px;
+  width: 42px;
 }
 .container-menu .list-menu__underline h2 {
-  font-size: 20px;
+  font-size: 18px;
   color: black;
   font-weight: 300;
   text-align: left;
   margin: 40px 0;
+  text-transform: uppercase;
 }
-.container-menu .list-menu__underline h3 {
-  font-size: 16px;
+.container-menu .list-menu h3 {
+  font-size: 18px;
   color: black;
-  font-weight: 500;
+  font-weight: 400;
 }
-.container-menu .list-menu__underline p {
-  font-size: 14px;
+.container-menu .list-menu p {
+  font-size: 13px;
   color: black;
   font-weight: 300;
 }

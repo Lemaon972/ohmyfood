@@ -56,31 +56,33 @@
             border-bottom: 3px solid $colour-tertiary;
             height: 30px;
             margin-bottom: 20px;
-            width: 43px;
+            width: 42px;
 
             h2 {
-                font-size: 20px;
+                font-size: 18px;
                 color: black;
                 font-weight: 300;
                 text-align: left;
                 margin: 40px 0;
+                text-transform: uppercase;
 
 
             }
+        }
 
             h3 {
-                font-size: 16px;
+                font-size: 18px;
                 color: black;
-                font-weight: 500;
+                font-weight: 400;
 
             }
 
             p {
-                font-size: 14px;
+                font-size: 13px;
                 color: black;
                 font-weight: 300;
             }
-        }
+        
     }
 
 }

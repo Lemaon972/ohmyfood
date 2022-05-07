@@ -13,22 +13,7 @@
         opacity: 1;
     }
 }
-@keyframes loader {
-    0% {
-    opacity: 1;
-    transform: rotate(0);
-    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    }
-    50% {
-    opacity: 1;
-    transform: rotate(900deg);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    }
-    100% {
-    opacity: 0;
-    transform: rotate(1800deg);
-    }
-    }
+
     @keyframes fadeout {
         0% {
         opacity: 1;
@@ -66,4 +51,33 @@
             }
         }
 
-
+        @keyframes loader2 {
+            0% {
+            opacity: 0;
+           
+            }
+            100% {
+            opacity: 1;
+            
+            }
+            }
+            @keyframes loader3 {
+                0% {
+                opacity: 0;
+               
+                }
+                100% {
+                opacity: 1;
+                
+                }
+                }
+                @keyframes loader4 {
+                    0% {
+                    opacity: 0;
+                   
+                    }
+                    100% {
+                    opacity: 1;
+                    
+                    }
+                    }
