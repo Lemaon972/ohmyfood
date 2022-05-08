@@ -27,3 +27,12 @@
        }
     }
 
+    @media screen and (min-width: 992px)
+    {
+        .header{
+            &__logo{
+            width: 200px;
+            margin: auto;
+            }
+        }
+    }

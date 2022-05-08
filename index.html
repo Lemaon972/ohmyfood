@@ -7,7 +7,10 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700,900" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/dd915a6b63.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/public/css/normalize.css">
         <link rel="stylesheet" href="/Sass/Main.css">
+        <link rel="stylesheet" type="text/css" media="screen and (min-width:992px)" href="public/css/max-style.css"/>
+        <link rel="stylesheet" type="text/css" media="screen and (max-width:768px)" href="public/css/tab-style.css"/>
         <title>Oh my food</title>
     </head>
 
@@ -31,7 +34,7 @@
                 <h1 class="nav__heading">Réservez le menu qui vous convient</h1>
                 <h2 class="nav__byline">Découvrez des restaurants d'exception, séléctionnés par nos soins.</h2>
 
-                <button class="primary">Explorer nos restaurants</button>
+                <button class="primary" onclick="document.location='#container'">Explorer nos restaurants</button>
             </div>
 
             <div class="nav__filtre">
@@ -47,9 +50,9 @@
                 </button>
             </div>
         </nav>
-        <main class="container">
+        <main class="container" id="container">
             <h2 class="container__titre">Restaurants</h2>
-            <section class="container__list">
+            <div class="container__list">
                 <article class="vignette" onclick="document.location='la-palette-du-gout.html'">
                     <div class="vignette__image">
                         <img src="Public/img/restaurants/la-palette-du-gout.jpg" alt="la-palette-du-gout">

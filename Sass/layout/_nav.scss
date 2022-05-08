@@ -71,11 +71,35 @@ i{
     width: 85%;
     font-size: 18px;
     transition: background-color 250ms;
-    &:hover + i{
+
+    &:hover + .fa{
         box-shadow: 2px 2px 5px $darkgrey;
         background-color: $colour-primary;
         background-color: lighten($colour-primary, $amount: 30);
+        color: $colour-primary;
     }
    
     
+}
+@media screen and (min-width: 992px)
+{
+    .nav{
+        
+        &__numero{
+            position: absolute;
+            left: 115px;
+            font-size: 22px;
+            padding: 5px 12px;
+            
+            }
+        i{
+            left: 10%;
+        }
+       
+        
+    }
+    .nav .fa-map-marker{
+        left: 45%;
+    }
+  
 }

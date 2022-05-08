@@ -230,7 +230,15 @@ button {
   background-color: #9356DC;
   background-color: #e4d5f6;
 }
+.btn-fonctionnement:hover + .fa {
+  color: aqua;
+}
 
+@media screen and (min-width: 992px) {
+  .primary {
+    width: 20%;
+  }
+}
 .header {
   display: flex;
   flex-direction: row;
@@ -256,6 +264,12 @@ button {
   font-size: 20px;
 }
 
+@media screen and (min-width: 992px) {
+  .header__logo {
+    width: 200px;
+    margin: auto;
+  }
+}
 .nav__concept {
   background-color: #f7f7f7;
   display: flex;
@@ -318,12 +332,28 @@ button {
   font-size: 18px;
   transition: background-color 250ms;
 }
-.btn-fonctionnement:hover + i {
+.btn-fonctionnement:hover + .fa {
   box-shadow: 2px 2px 5px #353535;
   background-color: #9356DC;
   background-color: #e4d5f6;
+  color: #9356DC;
 }
 
+@media screen and (min-width: 992px) {
+  .nav__numero {
+    position: absolute;
+    left: 115px;
+    font-size: 22px;
+    padding: 5px 12px;
+  }
+  .nav i {
+    left: 10%;
+  }
+
+  .nav .fa-map-marker {
+    left: 45%;
+  }
+}
 .container {
   width: 100%;
   display: flex;
@@ -345,6 +375,14 @@ button {
           animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
+@media screen and (min-width: 992px) {
+  .container__list {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
 input {
   border: none;
   height: 30px;
@@ -390,6 +428,11 @@ input {
   margin-right: 10px;
 }
 
+@media screen and (min-width: 992px) {
+  .footer {
+    align-items: center;
+  }
+}
 .loader2 {
   position: fixed;
   height: 100vh;
@@ -563,7 +606,7 @@ input {
   border-top-right-radius: 17px;
   border-bottom-right-radius: 17px;
   background-color: #99E2D0;
-  transition-duration: 1000ms;
+  transition-duration: 700ms;
 }
 .effet i {
   color: white;
@@ -577,6 +620,15 @@ input {
           animation: turn 1500ms forwards;
 }
 
+@media screen and (min-width: 992px) {
+  .vignette {
+    width: 30%;
+    margin-right: 50px;
+  }
+  .vignette__bandeau {
+    left: 215px;
+  }
+}
 .background-menu {
   width: 100%;
   display: flex;
@@ -644,4 +696,14 @@ input {
   font-size: 13px;
   color: black;
   font-weight: 300;
+}
+
+@media screen and (min-width: 992px) {
+  .background-menu {
+    height: 500px;
+  }
+
+  .container-menu {
+    text-align: center;
+  }
 }

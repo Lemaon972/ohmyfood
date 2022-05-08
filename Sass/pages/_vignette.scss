@@ -103,11 +103,7 @@
     margin-bottom: 25px;
     border-radius: 20px;
     @include shadow;
-    cursor: pointer;
-
-    
-
-    
+    cursor: pointer;    
 
     &__heading {
         padding-top: 5px;
@@ -142,7 +138,7 @@
         border-top-right-radius: 17px;
         border-bottom-right-radius: 17px;
         background-color: $colour-tertiary;
-        transition-duration: 1000ms;
+        transition-duration: 700ms;
         
        
 
@@ -159,4 +155,14 @@
             }
         
      }
-    
+     @media screen and (min-width: 992px)
+     {
+        .vignette {
+            width: 30%;
+            margin-right: 50px;
+            &__bandeau{
+                left: 215px;
+            }
+        }
+      
+     }

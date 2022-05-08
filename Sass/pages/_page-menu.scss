@@ -70,19 +70,29 @@
             }
         }
 
-            h3 {
-                font-size: 18px;
-                color: black;
-                font-weight: 400;
+        h3 {
+            font-size: 18px;
+            color: black;
+            font-weight: 400;
 
-            }
+        }
 
-            p {
-                font-size: 13px;
-                color: black;
-                font-weight: 300;
-            }
-        
+        p {
+            font-size: 13px;
+            color: black;
+            font-weight: 300;
+        }
+
     }
 
+}
+
+@media screen and (min-width: 992px) {
+    .background-menu {
+        height: 500px;
+    }
+    .container-menu{
+        text-align: center;
+    
+    }
 }
