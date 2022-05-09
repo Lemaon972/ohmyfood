@@ -5,7 +5,7 @@ button{
     margin-top: 20px;
     @include shadow;
     border: none;
-    cursor:pointer;
+    cursor: pointer;
     transition: background-color 350ms;
     }
 .primary{
@@ -16,7 +16,6 @@ button{
     border-radius: 50px;
     background: linear-gradient($colour-secondary, $colour-primary);
     
-    
     &:hover{
        box-shadow: 2px 2px 2px $darkgrey;
        
@@ -26,6 +25,7 @@ button{
 .btn-fonctionnement{
     width: 80%;
     font-size: 18px;
+    
     &:hover {
         box-shadow: 2px 2px 5px $darkgrey;
         background-color: $colour-primary;

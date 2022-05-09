@@ -377,7 +377,7 @@ button {
 
 @media screen and (min-width: 992px) {
   .container__list {
-    width: 80%;
+    width: 90%;
     margin: auto;
     display: flex;
     flex-wrap: nowrap;
@@ -426,6 +426,9 @@ input {
 .footer i {
   font-size: 18px;
   margin-right: 10px;
+}
+.footer a {
+  cursor: pointer;
 }
 
 @media screen and (min-width: 992px) {
@@ -490,11 +493,11 @@ input {
   box-shadow: 0px 1px 4px 2px #d6d6d6;
   margin-left: auto;
   margin-right: auto;
-  cursor: pointer;
   -webkit-animation: fadein 2000ms;
           animation: fadein 2000ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  cursor: pointer;
 }
 .vignette__image {
   position: relative;
@@ -507,6 +510,7 @@ input {
 }
 .vignette__image img {
   width: 100%;
+  height: 100%;
 }
 .vignette__info {
   display: flex;
@@ -531,11 +535,9 @@ input {
   padding-right: 20px;
 }
 .vignette__bandeau {
-  position: absolute;
-  top: 5px;
-  left: 225px;
-  margin-right: 25px;
-  margin-top: 15px;
+  position: relative;
+  left: 65%;
+  top: -95%;
   background-color: #99E2D0;
   font-size: 1.66rem;
   width: 30%;
@@ -622,11 +624,13 @@ input {
 
 @media screen and (min-width: 992px) {
   .vignette {
-    width: 30%;
+    width: 300px;
     margin-right: 50px;
   }
   .vignette__bandeau {
-    left: 215px;
+    position: relative;
+    left: 63%;
+    top: -100%;
   }
 }
 .background-menu {
@@ -701,9 +705,5 @@ input {
 @media screen and (min-width: 992px) {
   .background-menu {
     height: 500px;
-  }
-
-  .container-menu {
-    text-align: center;
   }
 }
