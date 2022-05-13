@@ -1,3 +1,5 @@
+// bloc vignette des restaurant sur la page index
+
 .vignette {
     width: 85%;
     border-radius: 20px;
@@ -61,6 +63,7 @@
 
 
 }
+// coeur qui se rempli sur les vignettes
 
 .fa-regular {
     position: relative;
@@ -92,6 +95,8 @@
 
 }
 
+// bloc vignette des plats sur les pages des restaurants 
+
 .vignette-menu {
     display: flex;
     justify-content: space-between;
@@ -103,6 +108,7 @@
     cursor: pointer;    
 
     &__heading {
+        
         padding-top: 5px;
         padding-left: 10px;
         margin: 5px 5px;
@@ -112,38 +118,39 @@
     &__check {
         display: flex;
 
+
     }
 
     &__prix {
-        display: flex;
+        
         align-items: flex-end;
         padding: 10px 20px 10px 0;
-        
+        font-weight: 600;
         
         }
 
-    }
+    
+}
+.effet {
 
+    display: block;
+    align-items: center;
+    width: 50px;
+    margin-right: -55px;
+    padding: 0 17px;
+    opacity: 1;
+    border-top-right-radius: 17px;
+    border-bottom-right-radius: 17px;
+    background-color: $colour-tertiary;
+    transition-duration: 700ms;
+    
+   
 
-    .effet {
-        display: grid;
-        align-items: center;
-        width: 50px;
-        margin-right: -55px;
-        padding: 0 17px;
-        opacity: 1;
-        border-top-right-radius: 17px;
-        border-bottom-right-radius: 17px;
-        background-color: $colour-tertiary;
-        transition-duration: 700ms;
+    i {
+        color: $white;
         
-       
-
-        i {
-            color: $white;
-            
-        }
     }
+}
     .vignette-menu :hover + .effet{
         margin: 0;
         

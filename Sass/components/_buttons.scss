@@ -1,3 +1,5 @@
+// forme général des boutons
+
 button{
     width: 90%;
     height: 70px;
@@ -8,6 +10,7 @@ button{
     cursor: pointer;
     transition: background-color 350ms;
     }
+// bouton "explorer les restaurants" et "commander"
 .primary{
     width: 60%;
     height: 50px;
@@ -22,6 +25,9 @@ button{
        
    }
 }
+
+// bouton index "étapes"
+
 .btn-fonctionnement{
     width: 80%;
     font-size: 18px;
