@@ -6,7 +6,6 @@
     background-color: $darkgrey;   
     color: $white;
     padding: 20px 20px;
-    
     &__logo h2 {
         font-family: 'Shrikhand', cursive;  
         color: $white;
@@ -21,10 +20,6 @@
        font-size: 18px;
         margin-right: 10px;
     }
-    a{
-        cursor: pointer;
-    }
-    
 }
 
 @media screen and (min-width: 992px)

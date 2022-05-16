@@ -1,37 +1,36 @@
 // bloc container index
 
-.container {
+.container{
     width: 100%;
     display: flex;
     flex-direction: column;
     background-color: #f7f7f7;
     padding: 50px 0;
+        
+   
+         
 
-
-    &__titre {
-        font-size: 28px;
-        font-weight: 700;
-        padding-right: 200px;
+        &__titre {
+            font-size: 28px;
+            font-weight: 700;
+            padding-right: 200px;
     }
-// div list vignettes restaurants index
-    &__list {
-        -webkit-animation: fadein 5s;
-        /* Safari, Chrome and Opera > 12.1 */
-        -moz-animation: fadein 5s;
-        /* Firefox < 16 */
-        animation: fadein 5s;
+    &__list{
+        -webkit-animation: fadein 2000ms; /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 2000ms; /* Firefox < 16 */
+        animation: fadein 2000ms;
         animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
 }
+@media screen and (min-width: 992px)
+     {
+.container{
+    &__list{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-wrap: nowrap;
 
-@media screen and (min-width: 992px) {
-    .container {
-        &__list {
-            width: 90%;
-            margin: auto;
-            display: flex;
-            flex-wrap: nowrap;
-
-        }
     }
 }
+     }

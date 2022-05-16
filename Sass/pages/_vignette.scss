@@ -1,5 +1,3 @@
-// bloc vignette des restaurant sur la page index
-
 .vignette {
     width: 85%;
     border-radius: 20px;
@@ -8,9 +6,16 @@
     @include shadow;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
     animation: fadein 2000ms;
     animation-fill-mode: forwards;
-    cursor: pointer; 
+
+    /*animation: itemAppear 0.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    opacity: 0;*/
+
     &__image {
         position: relative;
         margin: 0px;
@@ -48,9 +53,11 @@
     }
 
     &__bandeau {
-        position: relative;
-        left: 65%;
-        top: -95%;
+        position: absolute;
+        top: 5px;
+        left: 225px;
+        margin-right: 25px;
+        margin-top: 15px;
         background-color: $colour-tertiary;
         font-size: 1.66rem;
         width: 30%;
@@ -63,7 +70,6 @@
 
 
 }
-// coeur qui se rempli sur les vignettes
 
 .fa-regular {
     position: relative;
@@ -90,86 +96,117 @@
     font-size: 30px;
     transition: opacity 350ms;
     background: linear-gradient($colour-secondary, $colour-primary);
-    background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
 }
 
-// bloc vignette des plats sur les pages des restaurants 
+.partie{
 
-.vignette-menu {
-    display: flex;
-    justify-content: space-between;
-    overflow: hidden;
-    background-color: white;
-    margin-bottom: 25px;
-    border-radius: 20px;
-    @include shadow;
-    cursor: pointer;    
-
-    &__heading {
-        
-        padding-top: 5px;
-        padding-left: 10px;
-        margin: 5px 5px;
-        overflow: hidden;
-    }
-
-    &__check {
+    .vignette-menu {
         display: flex;
-
-
-    }
-
-    &__prix {
-        
-        align-items: flex-end;
-        padding: 10px 20px 10px 0;
-        font-weight: 600;
-        
-        }
-
+        justify-content: space-between;
+        overflow: hidden;
+        background-color: white;
+        margin-bottom: 25px;
+        border-radius: 20px;
     
-}
-.effet {
-
-    display: block;
-    align-items: center;
-    width: 50px;
-    margin-right: -55px;
-    padding: 0 17px;
-    opacity: 1;
-    border-top-right-radius: 17px;
-    border-bottom-right-radius: 17px;
-    background-color: $colour-tertiary;
-    transition-duration: 700ms;
+       /* animation: itemAppear 0.5s;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
     
-   
-
-    i {
-        color: $white;
+        opacity: 0;*/
+        @include shadow;
+        cursor: pointer;  
         
-    }
-}
-    .vignette-menu :hover + .effet{
-        margin: 0;
-        
-            i{
-                animation: turn 1500ms forwards;
+        animation: itemAppear 0.5s;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+        overflow: hidden;
+        opacity: 0;
+    
+        &__heading {
+            padding-top: 5px;
+            padding-left: 10px;
+            margin: 5px 5px;
+            overflow: hidden;
+            p {
+                font-size: 13px;
+                color: black;
+                font-weight: 300;
             }
-        
-     }
+        }
+    
+        &__check {
+            display: flex;
+    
+        }
+    
+        &__prix {
+            display: flex;
+            align-items: flex-end;
+            padding: 10px 20px 10px 0;
+            p {
+                font-size: 13px;
+                color: black;
+                font-weight: 600;
+            }
+            
+        }
+    
+    }
+    
+    .item2 {
+        animation-delay: 0.5s;
+      }
+      .item3 {
+        animation-delay: 1s;
+      }
+      .item4 {
+        animation-delay: 1.5s;
+      }
+    
+        .effet {
+            display: grid;
+            align-items: center;
+            width: 50px;
+            margin-right: -55px;
+            padding: 0 17px;
+            opacity: 1;
+            border-top-right-radius: 17px;
+            border-bottom-right-radius: 17px;
+            background-color: $colour-tertiary;
+            transition-duration: 700ms;
+            
+    
+            i {
+                color: $white;
+                
+            }
+        }
+        .vignette-menu :hover + .effet{
+            margin: 0;
+            
+                i{
+                    animation: turn 1500ms forwards;
+                }
+            
+         }
+    
+}
+
+
+
+
+     /**   Media querries      */
      @media screen and (min-width: 992px)
      {
         .vignette {
-            width: 300px;
+            width: 30%;
             margin-right: 50px;
             &__bandeau{
-                position: relative;
-                left: 63%;
-                top: -100%;
-            
+                left: 215px;
             }
-            
         }
-    }
+      
+     }

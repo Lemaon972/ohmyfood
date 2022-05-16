@@ -36,51 +36,24 @@
     
     &__numero{
         position:absolute;
-        left:20px;
         background-color: $colour-primary ;
         color: $white;
         font-size: 14px;
         border-radius: 50%;
+        margin-left: -10px;
         padding: 3px 7px;
     }
     
-i{
+    fa-map-marker{
     position: absolute;
+    margin-left: -35px;
     color: $darkgrey;
     font-size: 25px;
-    left: 65px;
     
 }
     
 }
-.primary{
-    width: 60%;
-    height: 50px;
-    font-size: 17px;
-    color: $white;
-    border-radius: 50px;
-    background: linear-gradient($colour-secondary, $colour-primary);
-    
-    &:hover{
-       box-shadow: 2px 2px 2px $darkgrey;
-       
-       
-   }
-}
-.btn-fonctionnement{
-    width: 85%;
-    font-size: 18px;
-    transition: background-color 250ms;
 
-    &:hover + .fa{
-        box-shadow: 2px 2px 5px $darkgrey;
-        background-color: $colour-primary;
-        background-color: lighten($colour-primary, $amount: 30);
-        color: $colour-primary;
-    }
-   
-    
-}
 @media screen and (min-width: 992px)
 {
     .nav{
@@ -88,8 +61,8 @@ i{
         &__numero{
             position: absolute;
             left: 115px;
-            font-size: 22px;
-            padding: 5px 12px;
+            font-size: 15px;
+            padding: 5px 10px;
             
             }
         i{
@@ -99,7 +72,8 @@ i{
         
     }
     .nav .fa-map-marker{
-        left: 45%;
+        position: absolute;
+        left:25px;
     }
   
 }

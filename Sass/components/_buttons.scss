@@ -1,51 +1,48 @@
 // forme général des boutons
-
-button{
+button {
     width: 90%;
     height: 70px;
-    border-radius:20px;
+    border-radius: 20px;
     margin-top: 20px;
     @include shadow;
     border: none;
     cursor: pointer;
     transition: background-color 350ms;
-    }
-// bouton "explorer les restaurants" et "commander"
-.primary{
-    width: 60%;
-    height: 50px;
-    font-size: 17px;
-    color: $white;
-    border-radius: 50px;
-    background: linear-gradient($colour-secondary, $colour-primary);
-    
-    &:hover{
-       box-shadow: 2px 2px 2px $darkgrey;
-       
-       
-   }
-}
 
-// bouton index "étapes"
-
-.btn-fonctionnement{
-    width: 80%;
-    font-size: 18px;
-    
     &:hover {
-        box-shadow: 2px 2px 5px $darkgrey;
-        background-color: $colour-primary;
-        background-color: lighten($colour-primary, $amount: 30);
+
+        background-color: lighten($colour-primary, 30%);
     }
-    &:hover +.fa{
-color: aqua;
+}
+    .primary {
+        width: 60%;
+        height: 50px;
+        font-size: 17px;
+        color: $white;
+        border-radius: 50px;
+        background: linear-gradient($colour-secondary, $colour-primary);
+      
+        &:hover {
+            box-shadow: 2px 2px 5px $darkgrey;
+            filter: brightness(1.05);    
+        }
     }
     
-}
-@media screen and (min-width: 992px)
-{
-    .primary{
-        width: 20%;
+    .btn-fonctionnement {
+        width: 80%;
+        font-size: 18px;
+        i{
+            position: absolute;
+            left: 70px;
+            
+        }
+        &:hover {
+            box-shadow: 2px 2px 5px $darkgrey;
+            background-color: $colour-primary;
+            background-color: lighten($colour-primary, $amount: 30);
+            i{
+                
+                color: $colour-primary;
+            }
+        }
     }
-
-}
