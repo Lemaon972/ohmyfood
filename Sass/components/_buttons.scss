@@ -46,3 +46,16 @@ button {
             }
         }
     }
+    @media screen and (min-width: 992px) {
+        .primary {
+            width: 30%;}
+
+        .btn-fonctionnement {
+           width: 40%;
+            i{
+                left: 0;
+                
+            }
+
+    }
+}

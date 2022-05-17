@@ -4,7 +4,7 @@
     flex-direction: column;
     background-color: $grey;
     object-fit: contain;
-
+    
 }
 
 .container-menu {
@@ -51,7 +51,6 @@
         flex-direction: column;
         width: 95%;
         padding-bottom: 50px;
-        margin: auto;
 
         &__underline {
             border-bottom: 3px solid $colour-tertiary;
@@ -88,8 +87,5 @@
     .background-menu {
         height: 500px;
     }
-    .container-menu{
-        text-align: center;
-    
-    }
+   
 }

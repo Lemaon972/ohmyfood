@@ -126,14 +126,18 @@
         opacity: 0;
     
         &__heading {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
             padding-top: 5px;
             padding-left: 10px;
-            margin: 5px 5px;
+            margin: 5px 0px;
             overflow: hidden;
             p {
                 font-size: 13px;
                 color: black;
                 font-weight: 300;
+                padding-left: 0px;
             }
         }
     
@@ -184,13 +188,16 @@
                 
             }
         }
-        .vignette-menu :hover + .effet{
+        .vignette-menu :active + .effet{
             margin: 0;
             
                 i{
                     animation: turn 1500ms forwards;
                 }
             
+         }
+         .vignette-menu ::after + .effet{
+             margin: 0;
          }
     
 }
@@ -208,5 +215,13 @@
                 left: 215px;
             }
         }
-      
+      .vignette-menu{
+        width: 30%;
+
+      }
+      .partie{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
      }
