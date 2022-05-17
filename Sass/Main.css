@@ -741,12 +741,6 @@ input {
   .vignette-menu {
     width: 30%;
   }
-
-  .partie {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 }
 .background-menu {
   width: 100%;
