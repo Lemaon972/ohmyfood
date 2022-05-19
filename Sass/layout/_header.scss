@@ -36,3 +36,12 @@
             }
         }
     }
+    @media screen and (min-width: 764px)
+    {
+        .header{
+            &__logo{
+            width: 200px;
+            margin: auto;
+            }
+        }
+    }

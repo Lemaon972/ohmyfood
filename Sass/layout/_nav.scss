@@ -54,6 +54,34 @@
     
 }
 
+
+
+@media screen and (min-width: 764px)
+{
+    .nav{
+        
+        &__numero{
+            position: absolute;
+            left: 9%;
+            font-size: 20px;
+            padding: 5px 10px;
+            
+            }
+        i{
+            left: 25%;
+        }
+        &__filtres{
+            padding: 0;
+        }
+        
+    }
+    .nav .fa-map-marker{
+        position: absolute;
+        left:40%;
+    }
+  
+}
+
 @media screen and (min-width: 992px)
 {
     .nav{
@@ -69,11 +97,6 @@
             left: 35%;
         }
        
-        
     }
-    .nav .fa-map-marker{
-        position: absolute;
-        left:40%;
-    }
-  
+    
 }

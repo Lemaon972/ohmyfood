@@ -196,9 +196,7 @@
                 }
             
          }
-         .vignette-menu ::after + .effet{
-             margin: 0;
-         }
+         
     
 }
 
@@ -206,16 +204,41 @@
 
 
      /**   Media querries      */
-     @media screen and (min-width: 992px)
+     
+     @media screen and (min-width: 764px)
      {
         .vignette {
-            width: 30%;
-            margin-right: 50px;
+            width: 40%;
+            margin-right: auto;
+            margin-left: auto;
             &__bandeau{
-                left: 215px;
+                left: 185px;
             }
         }
       .vignette-menu{
-        width: 30%;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .partie{
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+     }
+     @media screen and (min-width: 992px)
+     {
+        .vignette {
+            width: 35%;
+            min-width: 250px;
+            max-width: 300px;
+            margin-right: 50px;
+            &__bandeau{
+                left: 205px;
+            }
+        }
+      .vignette-menu{
+        width: 60%;
       }
      }
