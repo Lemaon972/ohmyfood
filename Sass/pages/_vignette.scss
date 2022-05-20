@@ -120,10 +120,29 @@
         cursor: pointer;  
         
         animation: itemAppear 0.5s;
-        animation-timing-function: ease-in;
         animation-fill-mode: forwards;
         overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        transition: padding-right 450ms ease-in-out;
         opacity: 0;
+        
+        &:hover {
+            padding-right: 50px;
+            text-overflow: ellipsis;
+          }
+          
+          &:hover .effet {
+            opacity: 1;
+            
+          }
+          &:hover .fa-circle-check{
+                transform: rotate(360deg);
+                transition-duration: 1000ms;
+            }
+          
+          
+          
     
         &__heading {
             display: flex;
@@ -174,35 +193,19 @@
             display: grid;
             align-items: center;
             width: 50px;
-            margin-right: -55px;
+            margin-right: -50px;
             padding: 0 17px;
             opacity: 1;
             border-top-right-radius: 17px;
             border-bottom-right-radius: 17px;
             background-color: $colour-tertiary;
-            transition-duration: 700ms;
+            transition: transform 330ms ease-in-out;
             
-    
             i {
-                color: $white;
-                
+                color: $white;  
             }
         }
-        .vignette-menu :active + .effet{
-            margin: 0;
-            
-                i{
-                    animation: turn 1500ms forwards;
-                }
-            
-         }
-         
-    
-}
-
-
-
-
+    }
      /**   Media querries      */
      
      @media screen and (min-width: 764px)
@@ -216,7 +219,7 @@
             }
         }
       .vignette-menu{
-        width: 80%;
+        width: 50%;
         margin-left: auto;
         margin-right: auto;
       }
@@ -227,18 +230,20 @@
     
     }
      }
+
      @media screen and (min-width: 992px)
      {
         .vignette {
-            width: 35%;
+            width: 45%;
             min-width: 250px;
             max-width: 300px;
-            margin-right: 50px;
+            margin: auto;
+            
             &__bandeau{
                 left: 205px;
             }
         }
-      .vignette-menu{
+      .vignette-menu {
         width: 60%;
       }
-     }
+    }

@@ -263,7 +263,8 @@ button {
   transition: background-color 350ms;
 }
 button:hover {
-  background-color: #e4d5f6;
+  background-color: white;
+  background-color: white;
 }
 
 .primary {
@@ -455,7 +456,7 @@ button:hover {
 }
 @media screen and (min-width: 992px) {
   .container__list {
-    width: 80%;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -690,12 +691,24 @@ input {
   cursor: pointer;
   -webkit-animation: itemAppear 0.5s;
           animation: itemAppear 0.5s;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition: padding-right 450ms ease-in-out;
   opacity: 0;
+}
+.partie .vignette-menu:hover {
+  padding-right: 50px;
+  text-overflow: ellipsis;
+}
+.partie .vignette-menu:hover .effet {
+  opacity: 1;
+}
+.partie .vignette-menu:hover .fa-circle-check {
+  transform: rotate(360deg);
+  transition-duration: 1000ms;
 }
 .partie .vignette-menu__heading {
   display: flex;
@@ -741,23 +754,16 @@ input {
   display: grid;
   align-items: center;
   width: 50px;
-  margin-right: -55px;
+  margin-right: -50px;
   padding: 0 17px;
   opacity: 1;
   border-top-right-radius: 17px;
   border-bottom-right-radius: 17px;
   background-color: #99E2D0;
-  transition-duration: 700ms;
+  transition: transform 330ms ease-in-out;
 }
 .partie .effet i {
   color: white;
-}
-.partie .vignette-menu :active + .effet {
-  margin: 0;
-}
-.partie .vignette-menu :active + .effet i {
-  -webkit-animation: turn 1500ms forwards;
-          animation: turn 1500ms forwards;
 }
 
 /**   Media querries      */
@@ -772,7 +778,7 @@ input {
   }
 
   .vignette-menu {
-    width: 80%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -785,10 +791,10 @@ input {
 }
 @media screen and (min-width: 992px) {
   .vignette {
-    width: 35%;
+    width: 45%;
     min-width: 250px;
     max-width: 300px;
-    margin-right: 50px;
+    margin: auto;
   }
   .vignette__bandeau {
     left: 205px;

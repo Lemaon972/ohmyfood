@@ -11,51 +11,60 @@ button {
 
     &:hover {
 
-        background-color: lighten($colour-primary, 30%);
+        background-color: lighten($colour-primary, 99%);
+        background-color: lighten($colour-secondary, 99%);
+
     }
 }
-    .primary {
-        width: 60%;
-        height: 50px;
-        font-size: 17px;
-        color: $white;
-        border-radius: 50px;
-        background: linear-gradient($colour-secondary, $colour-primary);
-      
-        &:hover {
-            box-shadow: 2px 2px 5px $darkgrey;
-            filter: brightness(1.05);    
-        }
-    }
-    
-    .btn-fonctionnement {
-        width: 80%;
-        font-size: 18px;
-        i{
-            position: absolute;
-            left: 70px;
-            
-        }
-        &:hover {
-            box-shadow: 2px 2px 5px $darkgrey;
-            background-color: $colour-primary;
-            background-color: lighten($colour-primary, $amount: 30);
-            i{
-                
-                color: $colour-primary;
-            }
-        }
-    }
-    @media screen and (min-width: 992px) {
-        .primary {
-            width: 30%;}
 
-        .btn-fonctionnement {
-           width: 40%;
-            i{
-                left: 0;
-                
-            }
+.primary {
+    width: 60%;
+    height: 50px;
+    font-size: 17px;
+    color: $white;
+    border-radius: 50px;
+    background: linear-gradient($colour-secondary, $colour-primary);
+
+    &:hover {
+        box-shadow: 2px 2px 5px $darkgrey;
+        filter: brightness(1.05);
+    }
+}
+
+.btn-fonctionnement {
+    width: 80%;
+    font-size: 18px;
+
+    i {
+        position: absolute;
+        left: 70px;
+
+    }
+
+    &:hover {
+        box-shadow: 2px 2px 5px $darkgrey;
+        background-color: $colour-primary;
+        background-color: lighten($colour-primary, $amount: 30);
+
+        i {
+
+            color: $colour-primary;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .primary {
+        width: 30%;
+    }
+
+    .btn-fonctionnement {
+        width: 40%;
+
+        i {
+            left: 0;
+
+        }
 
     }
 }
