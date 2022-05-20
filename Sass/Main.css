@@ -672,6 +672,7 @@ input {
   transition: opacity 350ms;
   background: linear-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
+          background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
