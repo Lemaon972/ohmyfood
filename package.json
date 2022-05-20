@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Site internet pour Oh my food",
   "main": "index.js",
-  "scripts": {    "sass": "sass --watch ./sass/main.scss:.public/css/style.css"  },
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:.public/css/style.css"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Lemaon972/ohmyfood.git"
