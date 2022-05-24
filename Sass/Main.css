@@ -286,7 +286,7 @@ button:hover {
 }
 .btn-fonctionnement i {
   position: absolute;
-  left: 70px;
+  left: 20%;
 }
 .btn-fonctionnement:hover {
   box-shadow: 2px 2px 5px #353535;
@@ -637,7 +637,7 @@ input {
 .vignette__bandeau {
   position: absolute;
   top: 5px;
-  left: 225px;
+  left: 60%;
   margin-right: 25px;
   margin-top: 15px;
   background-color: #99E2D0;

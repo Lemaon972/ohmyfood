@@ -1,6 +1,6 @@
 // loader index
 .loader2 {
-  position:fixed;
+  position: fixed;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -8,32 +8,34 @@
   inset: 0;
   z-index: 2;
   background-color: rgba(65, 64, 64, 0.98);
-  animation:fadeout 2000ms 2000ms;
+  animation: fadeout 2000ms 2000ms;
   animation-fill-mode: forwards;
- 
-  &__oh{
+
+  &__oh {
     opacity: 0;
     color: #fff;
     font-size: 40px;
-    font-family: 'Shrikhand', cursive; 
-    animation: loader2 2s ease-in-out ;
+    font-family: 'Shrikhand', cursive;
+    animation: loader2 2s ease-in-out;
     animation-fill-mode: forwards;
   }
-  &__my{
+
+  &__my {
     opacity: 0;
     color: #fff;
     font-size: 40px;
-    font-family: 'Shrikhand', cursive; 
-    animation: loader3 1s ease-in-out ;
+    font-family: 'Shrikhand', cursive;
+    animation: loader3 1s ease-in-out;
     animation-fill-mode: forwards;
     animation-delay: 1s;
   }
-  &__food{
+
+  &__food {
     opacity: 0;
     color: #fff;
     font-size: 40px;
-    font-family: 'Shrikhand', cursive; 
-    animation: loader4 1s ease-in-out ;
+    font-family: 'Shrikhand', cursive;
+    animation: loader4 1s ease-in-out;
     animation-delay: 2s;
     animation-fill-mode: forwards;
   }
@@ -44,6 +46,7 @@
     height: 80px;
 
   }
+
   &__spinner:after {
     content: " ";
     display: block;
@@ -55,6 +58,5 @@
     border-color: #fff transparent #fff transparent;
     animation: lds-dual-ring 1.2s linear infinite;
   }
-  
-}
 
+}
