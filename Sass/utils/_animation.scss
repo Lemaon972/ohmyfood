@@ -1,115 +1,84 @@
-@keyframes fadein {
-    0% {
-        opacity: 0;
+@keyframes fadeout {
+  0% {
+    opacity: 1;
 
-    }
+  }
 
-    50% {
-        opacity: 0;
+  50% {
+    opacity: 1;
 
-    }
-    80% {
-        opacity: 0;
+  }
 
-    }
-
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
-    @keyframes fadeout {
-        0% {
-        opacity: 1;
-        
-        }
-        50% {
-        opacity: 1;
-       
-        }
-        100% {
-        opacity: 0;
-          visibility: hidden;
-        }
-        }
-        @keyframes effetslide{
-            0%{
-                transform: translateY(-60px);
-                opacity: 0;
-            }
-            50%{
-                transform: translateY(-30px);
-                opacity: 0.5;
-            }
-            100%{
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-        @keyframes turn {
-            0%{
-                transform: rotate(0deg);
-            }
-            100%{
-                transform: rotate(360deg);
-            }
-        }
 
-        @keyframes loader2 {
-            0% {
-            opacity: 0;
-           
-            }
-            100% {
-            opacity: 1;
-            
-            }
-            }
-            @keyframes loader3 {
-                0% {
-                opacity: 0;
-               
-                }
-                100% {
-                opacity: 1;
-                
-                }
-                }
-                @keyframes loader4 {
-                    0% {
-                    opacity: 0;
-                   
-                    }
-                    100% {
-                    opacity: 1;
-                    
-                    }
-                    }
-                    @keyframes lds-dual-ring {
-                        0% {
-                          transform: rotate(0deg);
-                        }
-                        100% {
-                          transform: rotate(360deg);
-                        }
-                      }
-                      @keyframes itemAppear {
-                        0% {
-                          opacity: 0;
-                        }
-                        100% {
-                          opacity: 1;
-                        }
-                      }
-                    
-                    
-                    @keyframes itemDisappear {
-                        0% {
-                          opacity: 1;
-                        }
-                      
-                        100% {
-                          opacity: 0;
-                        }
-                      }
-                    
+@keyframes loader2 {
+  0% {
+    opacity: 0;
+
+  }
+
+  100% {
+    opacity: 1;
+
+  }
+}
+
+@keyframes loader3 {
+  0% {
+    opacity: 0;
+
+  }
+
+  100% {
+    opacity: 1;
+
+  }
+}
+
+@keyframes loader4 {
+  0% {
+    opacity: 0;
+
+  }
+
+  100% {
+    opacity: 1;
+
+  }
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes itemAppear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes itemDisappear {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

@@ -7,45 +7,6 @@
 
 }
 
-.container-menu {
-    display: flex;
-    position: relative;
-    align-items: center;
-    top: -70px;
-    z-index: 1;
-    flex-direction: column;
-    border-radius: 50px 50px 0 0;
-    width: 100%;
-    margin-bottom: -70px;
-    padding-bottom: 50px;
-    background-color: $lightgrey;
-
-    &__topheading {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        padding: 30px 10px 0px 10px;
-        align-items: center;
-        justify-content: space-around;
-
-
-
-        h1 {
-            font-size: 25px;
-            font-family: 'Shrikhand', cursive;
-            font-weight: 900;
-            margin: unset;
-        }
-
-        i {
-            font-size: 25px;
-
-
-        }
-    }
-
-
-
     .list-menu {
         display: flex;
         flex-direction: column;
@@ -81,17 +42,13 @@
 
     }
 
-}
+
 
 @media screen and (min-width: 992px) {
     .background-menu {
         height: 500px;
     }
 
-    .container-menu {
-        width: 100%;
-        margin-bottom: 50px;
-        border-radius: 50px 50px 0 0;
-        background: linear-gradient($lightgrey, white)
-    }
+    
+    
 }

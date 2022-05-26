@@ -1,32 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&family=Shrikhand&display=swap");
-@-webkit-keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 @-webkit-keyframes fadeout {
   0% {
     opacity: 1;
@@ -49,50 +21,6 @@
   100% {
     opacity: 0;
     visibility: hidden;
-  }
-}
-@-webkit-keyframes effetslide {
-  0% {
-    transform: translateY(-60px);
-    opacity: 0;
-  }
-  50% {
-    transform: translateY(-30px);
-    opacity: 0.5;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes effetslide {
-  0% {
-    transform: translateY(-60px);
-    opacity: 0;
-  }
-  50% {
-    transform: translateY(-30px);
-    opacity: 0.5;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@-webkit-keyframes turn {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes turn {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
   }
 }
 @-webkit-keyframes loader2 {
@@ -277,7 +205,7 @@ button:hover {
 }
 .primary:hover {
   box-shadow: 2px 2px 5px #353535;
-  filter: brightness(1.05);
+  filter: brightness(1.1);
 }
 
 .btn-fonctionnement {
@@ -454,6 +382,37 @@ button:hover {
     padding-right: 0;
   }
 }
+.container-menu {
+  display: flex;
+  position: relative;
+  align-items: center;
+  top: -70px;
+  z-index: 1;
+  flex-direction: column;
+  border-radius: 50px 50px 0 0;
+  width: 100%;
+  margin-bottom: -70px;
+  padding-bottom: 50px;
+  background-color: #f7f7f7;
+}
+.container-menu__topheading {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 30px 10px 0px 10px;
+  align-items: center;
+  justify-content: space-around;
+}
+.container-menu__topheading h1 {
+  font-size: 25px;
+  font-family: "Shrikhand", cursive;
+  font-weight: 900;
+  margin: unset;
+}
+.container-menu__topheading i {
+  font-size: 25px;
+}
+
 @media screen and (min-width: 992px) {
   .container__list {
     width: 100%;
@@ -463,6 +422,13 @@ button:hover {
   }
   .container__titre {
     padding-right: 0;
+  }
+
+  .container-menu {
+    width: 100%;
+    margin-bottom: 50px;
+    border-radius: 50px 50px 0 0;
+    background: linear-gradient(#f7f7f7, white);
   }
 }
 input {
@@ -813,49 +779,19 @@ input {
      object-fit: contain;
 }
 
-.container-menu {
-  display: flex;
-  position: relative;
-  align-items: center;
-  top: -70px;
-  z-index: 1;
-  flex-direction: column;
-  border-radius: 50px 50px 0 0;
-  width: 100%;
-  margin-bottom: -70px;
-  padding-bottom: 50px;
-  background-color: #f7f7f7;
-}
-.container-menu__topheading {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  padding: 30px 10px 0px 10px;
-  align-items: center;
-  justify-content: space-around;
-}
-.container-menu__topheading h1 {
-  font-size: 25px;
-  font-family: "Shrikhand", cursive;
-  font-weight: 900;
-  margin: unset;
-}
-.container-menu__topheading i {
-  font-size: 25px;
-}
-.container-menu .list-menu {
+.list-menu {
   display: flex;
   flex-direction: column;
   width: 95%;
   padding-bottom: 50px;
 }
-.container-menu .list-menu__underline {
+.list-menu__underline {
   border-bottom: 3px solid #99E2D0;
   height: 30px;
   margin-bottom: 20px;
   width: 42px;
 }
-.container-menu .list-menu__underline h2 {
+.list-menu__underline h2 {
   font-size: 18px;
   color: black;
   font-weight: 300;
@@ -863,7 +799,7 @@ input {
   margin: 40px 0;
   text-transform: uppercase;
 }
-.container-menu .list-menu h3 {
+.list-menu h3 {
   font-size: 18px;
   color: black;
   font-weight: 400;
@@ -872,13 +808,6 @@ input {
 @media screen and (min-width: 992px) {
   .background-menu {
     height: 500px;
-  }
-
-  .container-menu {
-    width: 100%;
-    margin-bottom: 50px;
-    border-radius: 50px 50px 0 0;
-    background: linear-gradient(#f7f7f7, white);
   }
 }
 .ensemble {
