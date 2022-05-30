@@ -122,15 +122,12 @@
 
         animation: itemAppear 0.5s;
         animation-fill-mode: forwards;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
         transition: padding-right 450ms ease-in-out;
         opacity: 0;
 
         &:hover {
             padding-right: 50px;
-            text-overflow: ellipsis;
+            
         }
 
         &:hover .effet {
@@ -153,20 +150,18 @@
             padding-top: 5px;
             padding-left: 10px;
             margin: 5px 0px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            h3 {
-                white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            }
-
+           
+         
             p {
                 font-size: 13px;
                 color: black;
                 font-weight: 300;
                 padding-left: 0px;
+            }
+            &:hover{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
         }
 
