@@ -101,7 +101,7 @@
 
 }
 
-.partie{
+.partie {
 
     .vignette-menu {
         display: flex;
@@ -110,15 +110,16 @@
         background-color: white;
         margin-bottom: 25px;
         border-radius: 20px;
-    
-       /* animation: itemAppear 0.5s;
+        
+
+        /* animation: itemAppear 0.5s;
         animation-timing-function: ease-in;
         animation-fill-mode: forwards;
     
         opacity: 0;*/
         @include shadow;
-        cursor: pointer;  
-        
+        cursor: pointer;
+
         animation: itemAppear 0.5s;
         animation-fill-mode: forwards;
         overflow: hidden;
@@ -126,24 +127,25 @@
         text-overflow: ellipsis;
         transition: padding-right 450ms ease-in-out;
         opacity: 0;
-        
+
         &:hover {
             padding-right: 50px;
             text-overflow: ellipsis;
-          }
-          
-          &:hover .effet {
+        }
+
+        &:hover .effet {
             opacity: 1;
-            
-          }
-          &:hover .fa-circle-check{
-                transform: rotate(360deg);
-                transition-duration: 1000ms;
-            }
-          
-          
-          
-    
+
+        }
+
+        &:hover .fa-circle-check {
+            transform: rotate(360deg);
+            transition-duration: 1000ms;
+        }
+
+
+
+
         &__heading {
             display: flex;
             flex-direction: column;
@@ -151,7 +153,15 @@
             padding-top: 5px;
             padding-left: 10px;
             margin: 5px 0px;
+            white-space: nowrap;
             overflow: hidden;
+            text-overflow: ellipsis;
+            h3 {
+                white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            }
+
             p {
                 font-size: 13px;
                 color: black;
@@ -159,91 +169,97 @@
                 padding-left: 0px;
             }
         }
-    
+
         &__check {
             display: flex;
-    
+
         }
-    
+
         &__prix {
             display: flex;
             align-items: flex-end;
             padding: 10px 20px 10px 0;
+
             p {
                 font-size: 13px;
                 color: black;
                 font-weight: 600;
             }
-            
+
         }
-    
+
     }
-    
+
     .item2 {
         animation-delay: 0.5s;
-      }
-      .item3 {
+    }
+
+    .item3 {
         animation-delay: 1s;
-      }
-      .item4 {
+    }
+
+    .item4 {
         animation-delay: 1.5s;
-      }
-    
-        .effet {
-            display: grid;
-            align-items: center;
-            width: 50px;
-            margin-right: -50px;
-            padding: 0 17px;
-            opacity: 1;
-            border-top-right-radius: 17px;
-            border-bottom-right-radius: 17px;
-            background-color: $colour-tertiary;
-            transition: transform 330ms ease-in-out;
-            
-            i {
-                color: $white;  
-            }
+    }
+
+    .effet {
+        display: grid;
+        align-items: center;
+        width: 50px;
+        margin-right: -50px;
+        padding: 0 17px;
+        opacity: 1;
+        border-top-right-radius: 17px;
+        border-bottom-right-radius: 17px;
+        background-color: $colour-tertiary;
+        transition: transform 330ms ease-in-out;
+
+        i {
+            color: $white;
         }
     }
-     /**   Media querries      */
-     
-     @media screen and (min-width: 764px)
-     {
-        .vignette {
-            width: 40%;
-            margin-right: auto;
-            margin-left: auto;
-            &__bandeau{
-                left: 185px;
-            }
+}
+
+/**   Media querries      */
+
+@media screen and (min-width: 764px) {
+    .vignette {
+        width: 40%;
+        margin-right: auto;
+        margin-left: auto;
+
+        &__bandeau {
+            left: 185px;
         }
-      .vignette-menu{
+    }
+
+    .vignette-menu {
         width: 50%;
         margin-left: auto;
         margin-right: auto;
-      }
-      .partie{
+    }
+
+    .partie {
         width: 60%;
         margin-left: auto;
         margin-right: auto;
-    
-    }
-     }
 
-     @media screen and (min-width: 992px)
-     {
-        .vignette {
-            width: 45%;
-            min-width: 250px;
-            max-width: 300px;
-            margin: auto;
-            
-            &__bandeau{
-                left: 205px;
-            }
-        }
-      .vignette-menu {
-        width: 60%;
-      }
     }
+}
+
+@media screen and (min-width: 992px) {
+    .vignette {
+        width: 45%;
+        min-width: 250px;
+        max-width: 300px;
+        margin: auto;
+
+        &__bandeau {
+            left: 205px;
+        }
+    }
+
+    .vignette-menu {
+        width: 60%;
+    }
+}
