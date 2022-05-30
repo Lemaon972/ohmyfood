@@ -39,11 +39,12 @@
 
     &__numero {
         position: absolute;
+        display: block;
         background-color: $colour-primary ;
         color: $white;
         font-size: 14px;
         border-radius: 50%;
-        margin-right: -90px;
+        margin-left: -68px;
         padding: 3px 7px;
     }
 
