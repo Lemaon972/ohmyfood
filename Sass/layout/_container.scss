@@ -16,14 +16,7 @@
         padding-right: 200px;
     }
 
-    &__list {
-        -webkit-animation: fadein 2000ms;
-        /* Safari, Chrome and Opera > 12.1 */
-        -moz-animation: fadein 2000ms;
-        /* Firefox < 16 */
-        animation: fadein 2000ms;
-        animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    }
+   
 }
 
 
