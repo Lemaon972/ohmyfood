@@ -305,11 +305,12 @@ button:hover {
 }
 .nav__numero {
   position: absolute;
+  display: block;
   background-color: #9356DC;
   color: white;
   font-size: 14px;
   border-radius: 50%;
-  margin-left: -10px;
+  margin-left: -8px;
   padding: 3px 7px;
 }
 .nav fa-map-marker {
@@ -360,14 +361,6 @@ button:hover {
   font-size: 28px;
   font-weight: 700;
   padding-right: 200px;
-}
-.container__list {
-  -webkit-animation: fadein 2000ms;
-  /* Safari, Chrome and Opera > 12.1 */
-  /* Firefox < 16 */
-  animation: fadein 2000ms;
-  -webkit-animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-          animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 @media screen and (min-width: 764px) {
@@ -650,25 +643,21 @@ input {
   margin-bottom: 25px;
   border-radius: 20px;
   /* animation: itemAppear 0.5s;
-   animation-timing-function: ease-in;
-   animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
 
-   opacity: 0;*/
+  opacity: 0;*/
   box-shadow: 0px 1px 4px 2px #d6d6d6;
   cursor: pointer;
   -webkit-animation: itemAppear 0.5s;
           animation: itemAppear 0.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
   transition: padding-right 450ms ease-in-out;
   opacity: 0;
 }
 .partie .vignette-menu:hover {
   padding-right: 50px;
-  text-overflow: ellipsis;
 }
 .partie .vignette-menu:hover .effet {
   opacity: 1;
@@ -678,7 +667,7 @@ input {
   transition-duration: 1000ms;
 }
 .partie .vignette-menu__heading {
-  display: flex;
+  display: block;
   flex-direction: column;
   align-items: flex-start;
   padding-top: 5px;
@@ -691,6 +680,14 @@ input {
   color: black;
   font-weight: 300;
   padding-left: 0px;
+}
+.partie .vignette-menu__heading h3 {
+  font-size: 18px;
+  color: black;
+  font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .partie .vignette-menu__check {
   display: flex;
@@ -799,70 +796,9 @@ input {
   margin: 40px 0;
   text-transform: uppercase;
 }
-.list-menu h3 {
-  font-size: 18px;
-  color: black;
-  font-weight: 400;
-}
 
 @media screen and (min-width: 992px) {
   .background-menu {
     height: 500px;
   }
-}
-.ensemble {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 40%;
-  background-color: white;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0px 1px 4px 2px #d6d6d6;
-}
-.ensemble__infomenu {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-}
-.ensemble__infoprix {
-  display: flex;
-  width: 100%;
-  justify-content: flex-end;
-}
-.ensemble__infoprix h1 {
-  font-size: 17px;
-  font-weight: 600;
-}
-.ensemble__prix {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 70px;
-  height: 100%;
-}
-.ensemble__effet {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  width: 70px;
-  height: 100%;
-  background-color: #99E2D0;
-  transition-duration: 1500ms;
-}
-.ensemble__effet i {
-  color: white;
-}
-
-.ensemble :active + .ensemble__effet {
-  display: grid;
-}
-.ensemble :active + .ensemble__effet i {
-  -webkit-animation: turn 1500ms forwards;
-          animation: turn 1500ms forwards;
-}
-
-.ensemble ::after + .ensemble__effet {
-  display: grid;
 }
