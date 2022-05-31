@@ -158,6 +158,10 @@
                 color: black;
                 font-weight: 300;
                 padding-left: 0px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                
             }
            
             h3 {
