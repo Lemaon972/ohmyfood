@@ -680,6 +680,9 @@ input {
   color: black;
   font-weight: 300;
   padding-left: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .partie .vignette-menu__heading h3 {
   font-size: 18px;
